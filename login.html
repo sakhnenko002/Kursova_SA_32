@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вхід</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container_log">
+       
+        <form class="form_log" method="post">
+            <h1 class="title_log">Login</h1>
+            <!-- <label for="username">Логін:</label> -->
+            <input class="input_log" type="text" placeholder="І'мя"  name="username" required><br>
+            <!-- <label for="password">Пароль:</label> -->
+            <input class="input_log" type="password" placeholder="Пароль" name="password" required><br>
+            <button class="submit"  type="submit">Увійти</button>
+            <p class="signin">Ви немаєте акаунт? <a href="/register">Register</a></p>
+        </form>
+    </div>
+</body>
+</html>

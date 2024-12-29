@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+ <div class="container_profile">
+<h2>Мої квитки</h2>
+{% if user_tickets %}
+    <ul>
+        {% for ticket in user_tickets %}
+            <li>
+                Маршрут: {{ ticket.route.route_name }}<br>
+                Дата бронювання: {{ ticket.date_of_purchase }}<br>
+                <form method="POST" style="display:inline;">
+                    <input type="hidden" name="ticket_id" value="{{ ticket.id_ticket }}">
+                    <button class="cancel_bth_profile"  type="submit">Скасувати квиток</button>
+                </form>
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>У вас немає квитків.</p>
+{% endif %}
+
+<button class="button_exit_select_profile"> <a href="/">Назад</a></button>
+</div>
+</body>
+</html>

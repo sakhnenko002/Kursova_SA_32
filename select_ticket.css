@@ -1,0 +1,89 @@
+@charset "UTF-8";
+.container_bth_selcet_route {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container_bth_selcet_route .form_select_ticket {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  /* Кнопка */
+}
+.container_bth_selcet_route .form_select_ticket h2 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+.container_bth_selcet_route .form_select_ticket h3 {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.container_bth_selcet_route .form_select_ticket p {
+  font-size: 1em;
+  color: #555;
+  margin: 8px 0;
+  font-family: "Montserrat", sans-serif;
+}
+.container_bth_selcet_route .form_select_ticket input[type=date],
+.container_bth_selcet_route .form_select_ticket input[type=number] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.container_bth_selcet_route .form_select_ticket .button_select_ticket {
+  background-color: royalblue;
+  color: #ffffff;
+  font-size: 1em;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  font-family: "Montserrat", sans-serif;
+}
+.container_bth_selcet_route .form_select_ticket .button_select_ticket:hover {
+  background-color: #0056b3;
+}
+.container_bth_selcet_route .form_select_ticket .button_exit_select_ticket {
+  width: 100%;
+  margin-top: 5px;
+}
+.container_bth_selcet_route .form_select_ticket .button_exit_select_ticket a {
+  background-color: #6c757d;
+  color: #ffffff;
+  font-size: 1em;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  flex: 1;
+  font-family: "Montserrat", sans-serif;
+}
+.container_bth_selcet_route .form_select_ticket .button_exit_select_ticket a:hover {
+  background-color: #495057;
+}
+.container_bth_selcet_route .form_select_ticket label {
+  font-size: 1em;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+  font-family: "Montserrat", sans-serif;
+}/*# sourceMappingURL=select_ticket.css.map */

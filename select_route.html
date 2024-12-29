@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вибір маршруту</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    
+    <div class="container_sel_route">
+    <!-- <h2>Оберіть маршрут</h2> -->
+    <form сlass="form_select_route" method="POST">
+        <label for="route_id">Виберіть маршрут:</label>
+        <select class="option_select_route" name="route_id" id="route_id">
+            {% for route in routes %}
+                <option value="{{ route.id_route }}">{{ route.route_name }} - Відправлення: {{ route.departure }} - Прибуття: {{ route.arrival }} - Ціна: {{ route.price }} грн</option>
+            {% endfor %}
+        </select>
+        <div class="container_bth_selcet_route"> 
+        <button class="select_rout_bth" type="submit">Обрати</button>
+      <button class="button_exit_select_rout"> <a href="/">Назад</a></button>
+    </div>
+    </form>
+    
+  
+</div>
+</body>
+</html>
+

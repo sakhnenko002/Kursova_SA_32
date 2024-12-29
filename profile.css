@@ -1,0 +1,73 @@
+@charset "UTF-8";
+.container_profile {
+  /* Контейнер для сторінки */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Стиль списку квитків */
+  /* Кнопка скасування */
+  /* Повідомлення про відсутність квитків */
+}
+.container_profile h2 {
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+.container_profile ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 20px auto;
+  font-family: "Montserrat", sans-serif;
+}
+.container_profile li {
+  background-color: #ffffff;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
+  font-family: "Montserrat", sans-serif;
+}
+.container_profile form {
+  display: inline;
+  font-family: "Montserrat", sans-serif;
+}
+.container_profile .cancel_bth_profile {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Montserrat", sans-serif;
+}
+.container_profile .cancel_bth_profile:hover {
+  background-color: #e63946;
+}
+.container_profile .button_exit_select_profile a {
+  background-color: #6c757d;
+  color: #ffffff;
+  font-size: 1em;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  flex: 1;
+}
+.container_profile .button_exit_select_profile a:hover {
+  background-color: #495057;
+}
+.container_profile p {
+  text-align: center;
+  color: #555;
+  font-size: 1em;
+  margin-top: 20px;
+}/*# sourceMappingURL=profile.css.map */

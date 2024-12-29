@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Travel_site</title>
+  </head>
+  <body>
+    <div class="wrapped">
+      <header class="header">
+        <div class="header__container">
+          <a href="#" class="header__logo">
+            <img src="{{ url_for('static', filename='image/Logo.svg') }}" alt="Logo"
+          /></a>
+          <div class="header__menu menu">
+            <nav class="menu__body">
+              <ul class="menu__list">
+                <li>
+                  <a href="/" class="menu__link">Головна сторінка</a>
+                </li>
+
+                <li>
+                  <a href="{{ url_for('profile') }}" class="menu__link">Профіль</a>
+                </li>
+                <li>
+                  <a href="#" class="menu__link">Маршрути</a>
+                </li>
+                <li>
+                  <a href="#" class="menu__link">Квитки</a>
+                </li>
+                <li>
+                  
+                  <a href="#"  class="menu__link">Контакти</a>
+                </li>
+          
+              <li class="header__bth">
+          
+                {% if username %}
+                   
+                     
+                    <button class="button_exit"><a href="/logout">Exit </a> </button>
+                {% else %}
+                   <button class="button_enter"><a href="/login">Login</a> </button> <button class="button_reg"><a href="/register">Register</a></button>
+                {% endif %}
+              </li>  
+            </ul>
+         
+            </nav>
+            <div class="menu__icon">
+              <span></span>
+            </div>
+          </div>
+          
+        
+          <input id="checkbox" type="checkbox" class="checkbox" />
+        </div>
+      </header>
+      <main class="main">
+        <section class="hero">
+          <div class="hero__container">
+            <img src="{{ url_for('static', filename='image/hero.png') }}" alt="hero-img">
+            <div class="hero__card">
+          
+              <h1>"Сучасні технології змінюють правила гри: облік квитків стає точним, швидким і зручним. Майбутнє належить тим, хто обирає інновації."</h1>
+              <div class="info__card">
+               
+                <h2 class="hidden">hello</h2>
+                <h3>Олександр Савченко<h3>
+                <h3>20 серпня,  2024<h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="gallery">
+          <div class="gallery__container">
+            <h2>Останні маршрути</h2>
+            <ul class="gallery__list">
+              <li class="gallery__item">
+                <img src="{{ url_for('static', filename='image/kviv.jpg') }}" alt="city">
+                <p><span>Київ</span></p>
+                <h2>Багата культура та незабутні враження чекають на вас. Відвідайте Київ сьогодні!</h2>
+                <div class="info__card">
+               
+                  <button class="gallery__button_card">
+                    <p> <a href="/select_route">Вибрати</a></p>
+                  </button>
+                </div>
+              </li>
+              <li class="gallery__item_kharkiv">
+                <img src="{{ url_for('static', filename='image/kharkiv-1.jpg') }}" alt="city">
+                <p><span>Харків</span></p>
+                <h2>Яскрава історія, вражаюча архітектура та захоплюючі пригоди чекають на вас. Відвідайте Харків сьогодні!!</h2>
+                <div class="info__card">
+                 
+                    <button class="gallery__button_card">
+                      <p> <a href="/select_route">Вибрати</a></p>
+                    </button>
+                </div>
+              </li>
+              <li class="gallery__item">
+                <img src="{{ url_for('static', filename='image/lviv.jpg') }}" alt="city">
+                <p><span>Львів</span></p>
+                <h2>Чарівні вулиці, багата історія та незабутні миті чекають на вас. Відвідайте Львів сьогодні!</h2>
+                <div class="info__card">
+               
+                  <button class="gallery__button_card">
+                    <p> <a href="/select_route">Вибрати</a></p>
+                  </button>
+                </div>
+              </li>
+              <li class="gallery__item_dnipro">
+                <img src="{{ url_for('static', filename='image/dnipro.jpeg') }}" alt="city">
+                <p><span>Дніпро</span></p>
+                <h2>Живе міське життя, захоплюючі види на річку та поєднання історії й сучасності чекають на вас. Відвідайте Дніпро сьогодні!</h2>
+                <div class="info__card">
+                  
+                  <button class="gallery__button_card">
+                    <p> <a href="/select_route">Вибрати</a></p>
+                  </button>
+                </div>
+              </li>
+            
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="about">
+            <h3>About</h3>
+            <p>Ласкаво просимо до GoLobe, <br>вашої платформи для легкого планування подорожей! <br>  
+
+              Ми надаємо інструменти та інформацію для організації ваших подорожей без зусиль, <br>від квитків до розкладів та маршрутів.  
+              
+              <br>Наша місія: зробити подорожі ефективними, доступними та приємними!</p>
+            <h4>  <span>Email</span> :  support@transitexplorer.com</h4>
+            <h4> <span>Phone</span>  : +380 123 456 789 </h4> 
+          </div>
+          <div class="footer__lists">
+            <ul class="footer__list">
+              <h3>Quick Link</h3>
+              <li>
+                <a href="" class="footer__link">Головна сторінка</a>
+              </li>
+              <li>
+                <a href="" class="footer__link">Про нас</a>
+              </li>
+              <li>
+                <a href="" class="footer__link">Маршрути</a>
+              </li>
+              <li>
+                <a href="" class="footer__link">Квитки</a>
+              </li>
+              <li>
+                <a href="" class="footer__link">Контакти</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>

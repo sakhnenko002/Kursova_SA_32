@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вибір квитка</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+ <div class="container_bth_selcet_route">
+    <form class="form_select_ticket" action="/select_ticket/{{ route.id_route }}" method="POST">
+
+        <h2>Маршрут: {{ route.route_name }}</h2>
+        <p>Відправлення: {{ route.departure }} | Прибуття: {{ route.arrival }}</p>
+        <p>Ціна: {{ route.price }} грн</p>
+    
+        <h3>Оберіть дату покупки:</h3>
+        <label for="date_of_purchase">Дата покупки:</label>
+        <input type="date" id="date_of_purchase" name="date_of_purchase" required><br><br>
+
+        <label for="payment_amount">Введіть суму для оплати (грн):</label>
+        <input type="number" name="payment_amount" id="payment_amount" step="0.01" required>
+
+        <button class="button_select_ticket" type="submit">Забронювати квиток</button>
+        <button class="button_exit_select_ticket"> <a href="/select_route">Назад</a></button>
+    </form>
+    </div>
+</body>
+</html>

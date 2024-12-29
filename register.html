@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container_reg">
+      
+        <form class="form_reg" method="post">
+              <h1 class="title">Register</h1>
+         
+             
+            <input class="input_reg" placeholder="І'мя" type="text" name="username" required><br>
+          
+            <input class="input_reg" placeholder="Пошта" type="email" name="email" required><br>
+          
+            <input class="input_reg" placeholder="Пароль" type="password" name="password" required><br>
+        
+            <input class="input_reg"  placeholder="Підтвердити пароль" type="password" name="repeat_password" required><br>
+            <button class="submit" type="submit">Зареєструватися</button>
+            <p class="signin">Ви вже маєте акаунт? <a href="/login">Signin</a> </p>
+        </form>
+    </div>
+</body>
+</html>
