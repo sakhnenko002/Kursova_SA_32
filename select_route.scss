@@ -1,68 +1,5 @@
 @import "variables";
 
-// .container_sel_route {
-//     // border: 2px red solid;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-//     form {
-//         display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     gap: 6px;
-//     max-width: 500px;
-//     width: 100%;
-//     background-color: #fff;
-//     padding: 20px;
-//     border-radius: 20px;
-//     position: relative;
-//     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
-//     font-family: $ffFooter;
-//     .container_bth_selcet_route {
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         .select_rout_bth {
-//             border: 1px royalblue solid;
-//             background-color: royalblue;
-//             border-radius: 10px;
-//             width: 70px;
-//             height: 30px;
-//             color: white;
-//             font-weight: 600;
-//             margin: 0px 10px 0px 0px;
-//             font-family: $ffFooter;
-//         }
-//         .button_exit_select_rout {
-//             border: 1px royalblue solid;
-//             border-radius: 10px;
-//             width: 70px;
-//             height: 30px;
-//             background-color: white;
-//             // margin: 0px 0px 5px 0px;
-//            >a{
-//             font-family: $ffFooter;
-//             color: royalblue;
-//             font-weight: 600;
-            
-//            }
-//         }
-//     }
-//     .option_select_route {
-//         width: 100%;
-//         padding: 10px 10px 20px 10px;
-//         outline: 0;
-//         border: 1px solid rgba(105, 105, 105, 0.397);
-//         border-radius: 10px;
-//     }
-//     }
-//   }
-
-
-
-
-
 .container_sel_route {
     display: flex;
     flex-direction: column;
@@ -88,7 +25,7 @@
         margin-bottom: 15px;
     }
     
-    /* Текст меток */
+    
     label {
         font-size: 1.5em;
         color: #555;
@@ -108,7 +45,7 @@
         cursor: pointer;
     }
     
-    /* Контейнер кнопок */
+    
     .container_bth_selcet_route {
         display: flex;
         justify-content: space-between;
@@ -116,7 +53,7 @@
         align-items: center;
     }
     
-    /* Кнопка "Обрати" */
+    
     .select_rout_bth {
         background-color: #007bff;
         color: #ffffff;
@@ -134,7 +71,7 @@
         background-color: #0056b3;
     }
     
-    /* Кнопка "Назад" */
+    
     .button_exit_select_rout a {
         background-color: #6c757d;
         color: #ffffff;
