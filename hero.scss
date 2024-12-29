@@ -10,18 +10,10 @@
     );
   }
 
-  // @media (min-width: $tablet) {
-  //   font-size: calc(
-  //     #{$fzTablet + px} + #{$addTabletSize} * (100vw / #{$maxWidthsAdpt})
-  //   );
-  // }
+
 }
 
-// @mixin adaptive-font($pcSize, $mobSize) {
-// 	$addSize: $pcSize - $mobSize;
-// 	$maxWidthsAdpt: $maxWidthsAdpt - 320;
-// 	font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthsAdpt}));
-// }
+
 
 .hero {
   margin: 0 auto;
@@ -103,7 +95,7 @@
         font-weight: 500;
         line-height: 20px;
         text-align: left;
-        // @include adaptive-font(14, 10);
+      
       }
     }
     h1 {
