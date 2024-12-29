@@ -5,10 +5,10 @@
 }
 .footer .footer__container {
   display: grid;
-  grid-template-columns: 1fr auto; /* Ліва колонка розтягується, права займає мінімальну ширину */
-  align-items: center; /* Вирівнювання елементів по вертикалі */
-  gap: 20px; /* Відстань між елементами, якщо потрібно */
-  width: 100%; /* За потреби можна налаштувати ширину контейнера */
+  grid-template-columns: 1fr auto; 
+  align-items: center; 
+  gap: 20px; 
+  width: 100%; 
 }
 @media (max-width: 991.98px) {
   .footer .footer__container {
@@ -39,7 +39,7 @@
 }
 .footer .footer__container .footer__lists {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Автоматично розташовуємо елементи по горизонталі */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
 }
 @media (max-width: 991.98px) {
   .footer .footer__container .footer__lists {
